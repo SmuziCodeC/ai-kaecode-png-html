@@ -1,0 +1,16 @@
+<!DOCTYPE kae>
+<!SCRIPTTYPE 2d hd local>
+<!import 'Comments++'> / <comment> '38284-49285-73453' v="! Чтобы комментарии были нормальными и более легкими" /
+<!import 'KaeAI'> / *! Импортируeм Kae ИИ !* /
+<code {c class=f(|EG)} full tr>  / *! Делаем код на *infinity* строк и запрещая ровное количество (тоесть фиг его включишь) !* /
+<function class="GenNeuron"  / *! Функция будет копировать нейрону из KaeAI, получать его состав с тегом structure, и генерировать способность нейроне, убирая старую !* /
+  <kae-ai<copy-neuron>>
+  <structure func var 'i-38284-49285-73453'> / *! ID структуры скрипта здесь !* /
+  <kae-ai<kae-engine><id input="-38284-49285-73453" user-input="neuron">
+end>
+
+<start>  / *! Чтобы на старт скрипта он повторял на полный экран 7 дисплея нейроны !* /
+  <repeat (full-weight)>
+     <function class="GenNeuron" start active 1x 1y copied 1x>
+  <end>
+<end>
